@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cadastro | Seu Direito, Nosso Compromisso</title>
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="container-header">
+    <div class="logo">
+      <img src="assets/img/justice.png" alt="Logo Justiça" />
+    </div>
+    <nav class="nav-bar">
+      <ul>
+        <li><a href="index.html#sobre">Sobre</a></li>
+        <li><a href="index.html#atuacao">Áreas de Atuação</a></li>
+        <li><a href="cadastro.html" class="btn">Cadastre-se</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Seção de Cadastro -->
+  <section class="cadastro">
+    <div class="container">
+      <h2>Cadastre-se</h2>
+      <p>Conecte-se com profissionais do Direito especializados na sua necessidade.</p>
+
+      <form action="processa-cadastro.php" method="post" id="cadastroForm">
+        <div class="form-group">
+          <label for="nome">Nome</label>
+          <input type="text" id="nome" name="nome" placeholder="Seu nome completo" required />
+        </div>
+
+        <div class="form-group">
+          <label for="email">E-mail</label>
+          <input type="email" id="email" name="email" placeholder="seuemail@exemplo.com" required />
+        </div>
+
+        <div class="form-group">
+            <label for="telefone">Telefone</label>
+            <div style="display: flex; align-items: center;">
+              <span style="padding: 0 8px; background: #eee; border: 1px solid #ccc; border-right: none;">+55</span>
+              <input type="text" id="telefone" name="telefone" placeholder="DDD + número" maxlength="11" required />
+            </div>
+          </div>
+          
+          
+
+        <div class="form-group">
+          <label for="endereco">Endereço</label>
+          <input type="text" id="endereco" name="endereco" placeholder="Rua, número, complemento" required />
+        </div>
+
+        <div class="form-group">
+          <label for="regiao">Região de São Paulo que reside</label>
+          <select id="regiao" name="regiao" required>
+            <option value="">Selecione</option>
+            <option value="Norte">Norte</option>
+            <option value="Sul">Sul</option>
+            <option value="Leste">Leste</option>
+            <option value="Centro">Centro</option>
+            <option value="Oeste">Oeste</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="areaInteresse">Área de Interesse</label>
+          <select id="areaInteresse" name="areaInteresse" required>
+            <option value="">Selecione</option>
+            <option value="CIVIL">Direito Civil</option>
+            <option value="PENAL">Direito Penal</option>
+            <option value="TRABALHISTA">Direito do Trabalho</option>
+            <option value="EMPRESARIAL">Direito Empresarial</option>
+            <option value="FAMILIA">Direito de Família</option>
+            <option value="IMOBILIARIO">Direito Imobiliário</option>
+            <option value="CONSUMIDOR">Direito do Consumidor</option>
+            <option value="TRIBUTARIO">Direito Tributário</option>
+            <option value="AMBIENTAL">Direito Ambiental</option>
+            <option value="ADMINISTRATIVO">Direito Administrativo</option>
+            <option value="ELETORAL">Direito Eleitoral</option>
+            <option value="OUTROS">Outros</option>
+          </select>
+        </div>
+
+        <button type="submit" class="btn-primary">Enviar Cadastro</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-contato">
+          <p><strong>Contato:</strong> lmirandaeb@gmail.com.br</p>
+        </div>
+        <div class="footer-links">
+          <a href="index.html#sobre">Sobre</a>
+          <a href="cadastro.html">Cadastro</a>
+          <a href="index.html#cta">Precisa de ajuda?</a>
+          <a href="#">Política de Privacidade</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Seu Direito, Nosso Compromisso. Todos os direitos reservados.</p>
+        <p>Este site tem caráter informativo e não substitui a consultoria jurídica profissional.</p>
+      </div>
+    </div>
+  </footer>
+  
+
+  <!-- JS -->
+  <script src="/js/script.js"></script>
+  <script src="/js/api-cadastro.js"></script>
+
+</body>
+</html>
